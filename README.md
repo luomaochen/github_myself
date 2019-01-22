@@ -6,3 +6,5 @@
 3.0  react-navigation高级应用&实现动态导航器 实现底部导航根据一个数组 进行改变(封装到了 DynamicTabNavigator.js 里面 )   
      实现Popular 页面顶部的Tab根据 一个数组 进行动态改变 其中  PopularPage页面   
      的 screen: props => <PopularTab {...props} tabLabel={item}/>,   // 这种方式进行参数传递，教程没有 
+
+4.0  基于Redux与react-navigation的 React Native项目框架搭建  集成了redux  并且实现了 TrendingPage界面 修改主题色的功能 
