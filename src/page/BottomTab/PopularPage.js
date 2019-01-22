@@ -3,7 +3,8 @@ import {Button, StyleSheet, Text, View, FlatList, RefreshControl} from 'react-na
 import {createMaterialTopTabNavigator, createAppContainer} from "react-navigation";
 import NavigationUtil from "../../navigator/NavigationUtil";
 import {connect} from 'react-redux';
-import actions from '../../action/index'
+import actions from '../../action/index';
+import PopularItem from '../../common/PopularItem'
 
 
 const URL = 'https://api.github.com/search/repositories?q=';
@@ -88,11 +89,12 @@ class PopularTab extends Component {   // 用于Tab下面的界面显示 相当�
 
   renderItem(data) {
       const item = data.item;
-      return <View style={{marginBottom: 10}}>
-          <Text style={{backgroundColor: "#faa"}}>
-              {JSON.stringify(item)}
-          </Text>
-      </View>
+      return <PopularItem
+            item={item}
+            onSelect={() => {
+
+            }}
+        />
   }
   
   render() {
@@ -139,8 +141,7 @@ const PopularTabPage = connect(mapStateToProps, mapDispatchToProps)(PopularTab)
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    marginTop: 30
+    flex: 1
   },
   tabStyle: {
       minWidth: 50
