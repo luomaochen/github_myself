@@ -17,4 +17,6 @@
 
 8.1 基于Redux+FlatList实现列表页数据加载
 8.2 基于Redux+FlatList实现列表页数据加载(实现Item)
-8.3 FlatList实现列表页实现上拉加载更多 
+8.3 FlatList实现列表页实现上拉加载更多 FlatList上拉加载两次的坑 的解决方法
+
+9.1 实现自定义的 NavigationBar  分别在PopularPage 和 Mypage 进行使用 MyPage还多了左侧后退 和 右侧搜索 按钮
