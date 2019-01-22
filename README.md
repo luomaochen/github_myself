@@ -13,3 +13,4 @@
 
 6.1 React Native网络编程之Fetch精讲(Fetch demo实例)
 6.2 React Native数据库编程之AsyncStorage精讲(AsyncStorage demo 实例)
+6.3 React Native离线缓存框架设计  封装了 离线缓存的方法类  在expand/dao/DataStore.js 里面

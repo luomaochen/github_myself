@@ -83,6 +83,14 @@ class PopularTab extends Component {   // 用于Tab下面的界面显示 相当�
                   }, "AsyncStorageDemoPage")
               }}
           />
+          <Button
+              title={"离线缓存框架"}
+              onPress={() => {
+                  NavigationUtil.goPage({
+                      navigation: this.props.navigation
+                  }, "DataStoreDemoPage")
+              }}
+           />
         </View>
       );
     }

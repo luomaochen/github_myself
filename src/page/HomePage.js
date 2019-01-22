@@ -13,7 +13,7 @@ class HomePage extends Component {
   }
 
   componentWillUnmount() {
-      BackHandler.removeEventListener("hardwareBackPress", this.onBackPress);
+    BackHandler.removeEventListener("hardwareBackPress", this.onBackPress);
   }
 
   /**
