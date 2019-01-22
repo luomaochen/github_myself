@@ -1,17 +1,27 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-
+import {Platform, StyleSheet, Text, View, Button} from 'react-native';
 
 export default class TrendingPage extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>TrendingPage</Text>
-      </View>
-    );
-  }
+    render() {
+        const {navigation} = this.props;
+        return (
+            <View style={styles.container}>
+                <Text style={styles.welcome}>TrendingPage</Text>
+                <Button
+                    title="改变主题色"
+                    onPress={() => {
+                        navigation.setParams({
+                            theme: {
+                                tintColor: 'red',
+                                updateTime: new Date().getTime()
+                            }
+                        })
+                    }}
+                />
+            </View>
+        );
+    }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
