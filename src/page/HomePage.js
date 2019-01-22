@@ -11,6 +11,7 @@ import MyPage from './BottomTab/MyPage';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
+import NavigationUtil from '../navigator/NavigationUtil';
 
 export default class HomePage extends Component {
   _tabNavigator() {
@@ -71,6 +72,7 @@ export default class HomePage extends Component {
   }
 
   render() {
+    NavigationUtil.navigation = this.props.navigation;  // 将最外层的navigation保存在 NavigationUtil 里面  这样子在HomePage里面的页面也可以跳转到最外层的DetailPage了
     const Tab = this._tabNavigator();
     return <Tab />
   }
