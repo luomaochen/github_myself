@@ -10,3 +10,6 @@
 4.0  基于Redux与react-navigation的 React Native项目框架搭建  集成了redux  并且实现了 TrendingPage界面 修改主题色的功能 
 
 5.0  处理安卓物理返回键
+
+6.1 React Native网络编程之Fetch精讲(Fetch demo实例)
+6.2 React Native数据库编程之AsyncStorage精讲(AsyncStorage demo 实例)
