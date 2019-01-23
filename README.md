@@ -22,5 +22,11 @@
 9.1 实现自定义的 NavigationBar 引入 prop-types 进行类型检验   分别在PopularPage 和 Mypage 进行使用 MyPage还多了左侧后退 和 右侧搜索 按钮
 9.2 趋势页面开发(DataStore扩展&action,reducer封装与使用) 趋势页面开发(列表实现  引入展示html的库 react-native-htmlview)
 9.3 如何实现React Native自定义弹框(Modal组件的使用)
-9.4 事件触发  DeviceEventEmitter.emit(EVENT_TYPE_TIME_SPAN_CHANGE, tab);
+9.4 趋势菜单功能开发(DeviceEventEmitter的使用)
+    事件触发  DeviceEventEmitter.emit(EVENT_TYPE_TIME_SPAN_CHANGE, tab);
     事件监听 DeviceEventEmitter.addListener
+
+9.5 详情页面开发（WebView使用、 WebView导航状态处理、 代码封装与复用提取ViewUtil、模块化BackPressComponent{安卓物理返回键模块}） 
+
+    在组件其他地方调用组件方法 先把组件保存到ref里 ref={webView => this.webView = webView} 
+    然后在调用的地方 this.webView.goBack();

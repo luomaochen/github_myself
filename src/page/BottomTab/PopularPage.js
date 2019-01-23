@@ -133,7 +133,9 @@ class PopularTab extends Component {   // 用于Tab下面的界面显示 相当�
       return <PopularItem
             item={item}
             onSelect={() => {
-
+                NavigationUtil.goPage({
+                    projectModel: item
+                },'DetailPage')
             }}
         />
   }
