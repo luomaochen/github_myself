@@ -5,7 +5,7 @@ import {
 } from "react-navigation";
 import WelcomePage from '../page/WelcomePage';
 import HomePage from '../page/HomePage';
-import FetchDemoPage from '../page/FetchDemoPage';
+import WebViewPage from '../page/WebViewPage';
 import AsyncStorageDemoPage from '../page/AsyncStorageDemoPage';
 import DataStoreDemoPage from '../page/DataStoreDemoPage';
 import DetailPage from '../page/DetailPage';
@@ -34,10 +34,10 @@ const MainNavigator = createStackNavigator({
             header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
         }
     },
-    FetchDemoPage: {
-        screen: FetchDemoPage,
+    WebViewPage: {
+        screen: WebViewPage,
         navigationOptions: {
-            // header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
+            header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
         }
     },
     AsyncStorageDemoPage: {

@@ -43,7 +43,17 @@ class MyPage extends Component {
     }
 
     onClick(menu) {
-
+        let RouteName, params = {};
+            switch (menu) {
+                case MORE_MENU.Tutorial:
+                RouteName = 'WebViewPage';
+                    params.title = '教程';
+                    params.url = 'https://coding.m.imooc.com/classindex.html?cid=89';
+                    break
+            }
+            if (RouteName){
+                NavigationUtil.goPage(params,RouteName);
+            }
     }
 
     getItem(menu) {
@@ -60,8 +70,6 @@ class MyPage extends Component {
                 title={'我的'}
                 statusBar={statusBar}
                 style={{backgroundColor: THEME_COLOR}}
-                rightButton={this.getRightButton()}
-                leftButton={this.getLeftButton()}
             />;
         return (
             <View style={GlobalStyles.root_container}>
