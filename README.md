@@ -34,3 +34,5 @@
 9.6 基于多数据存储设计思想实现FavoriteDao，封装BaseItem
     AsyncStorage 方法看看https://reactnative.cn/docs/asyncstorage 
     componentWillReceiveProps在新版React中不能再用了 详细看BaseItem.js
+
+9.7  收藏功能的实现 （实现列表页面的收藏）
