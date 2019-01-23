@@ -36,3 +36,4 @@
     componentWillReceiveProps在新版React中不能再用了 详细看BaseItem.js
 
 9.7  收藏功能的实现 （实现列表页面的收藏）
+9.8  实现详情页的收藏功能状态同步 利用 callback 巧妙实现 详情页收藏的状态马上反馈给 Popular 和 Trending 页面
