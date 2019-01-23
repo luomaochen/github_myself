@@ -9,7 +9,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import NavigationUtil from "../navigator/NavigationUtil";
 import BackPressComponent from "../common/BackPressComponent";
 
-export default class DetailPage extends Component<Props> {
+export default class DetailPage extends Component {
     constructor(props) {
         super(props);
         this.params = this.props.navigation.state.params;

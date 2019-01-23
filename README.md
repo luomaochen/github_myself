@@ -30,3 +30,7 @@
 
     在组件其他地方调用组件方法 先把组件保存到ref里 ref={webView => this.webView = webView} 
     然后在调用的地方 this.webView.goBack();
+
+9.6 基于多数据存储设计思想实现FavoriteDao，封装BaseItem
+    AsyncStorage 方法看看https://reactnative.cn/docs/asyncstorage 
+    componentWillReceiveProps在新版React中不能再用了 详细看BaseItem.js
