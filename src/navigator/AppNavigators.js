@@ -9,6 +9,7 @@ import WebViewPage from '../page/WebViewPage';
 import AsyncStorageDemoPage from '../page/AsyncStorageDemoPage';
 import DataStoreDemoPage from '../page/DataStoreDemoPage';
 import DetailPage from '../page/DetailPage';
+import AboutPage from '../page/about/AboutPage';
 import {connect} from 'react-redux';
 import {createReactNavigationReduxMiddleware, reduxifyNavigator} from 'react-navigation-redux-helpers';
 export const rootCom = 'Init';//设置根路由
@@ -40,10 +41,10 @@ const MainNavigator = createStackNavigator({
             header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
         }
     },
-    AsyncStorageDemoPage: {
-        screen: AsyncStorageDemoPage,
+    AboutPage: {
+        screen: AboutPage,
         navigationOptions: {
-            // header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
+            header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
         }
     },
     DataStoreDemoPage: {
