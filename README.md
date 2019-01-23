@@ -21,3 +21,4 @@
 
 9.1 实现自定义的 NavigationBar 引入 prop-types 进行类型检验   分别在PopularPage 和 Mypage 进行使用 MyPage还多了左侧后退 和 右侧搜索 按钮
 9.2 趋势页面开发(DataStore扩展&action,reducer封装与使用) 趋势页面开发(列表实现  引入展示html的库 react-native-htmlview)
+9.3 如何实现React Native自定义弹框(Modal组件的使用)
