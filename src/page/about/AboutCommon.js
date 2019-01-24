@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     stickySection: {
         height: STICKY_HEADER_HEIGHT,
         width: 300,
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
     },
     stickySectionText: {
         color: 'white',
